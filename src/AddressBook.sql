@@ -1,9 +1,7 @@
 "welcome to address book service"
 
 UC1:create a Address Book Service DB
-mysql> CREATE DATABASE Address Book Service
-    ->
-    -> ^C
+
 mysql> CREATE DATABASE AddressBookService;
 Query OK, 1 row affected (1.79 sec)
 
