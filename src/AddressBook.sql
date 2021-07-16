@@ -129,3 +129,13 @@ mysql> select * from addressbook
 | sarita    | kumari   | saketpuram | delhi     | delhi | 234632 |  9988776658 | sarita09@gmail.com   |
 +-----------+----------+------------+-----------+-------+--------+-------------+----------------------+
 2 rows in set (0.00 sec)
+
+UC7:size of addressbook by city and state
+mysql> select count(city), count(state)
+    -> from addressbook;
++-------------+--------------+
+| count(city) | count(state) |
++-------------+--------------+
+|           4 |            4 |
++-------------+--------------+
+1 row in set (0.00 sec)
