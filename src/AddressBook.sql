@@ -68,7 +68,7 @@ mysql> select * from addressbook;
 +-----------+----------+----------------+-----------+-----------+--------+-------------+----------------------+
 | firstName | lastName | address        | city      | state     | zip    | phoneNumber | email                |
 +-----------+----------+----------------+-----------+-----------+--------+-------------+----------------------+
-| ujjawal   | kumar    | isawarpur      | gorakhpur | up        | 273016 |  9988776655 | ujjawal123@gmail.com |
+| ujjawal   | kumar    | gorakhpur      | gorakhpur | up        | 273017 |  9988776655 | ujjawal123@gmail.com |
 | raj       | kumar    | kunraghat      | gorakhpur | up        | 273018 |  9988776656 | raj23@gmail.com      |
 | omkar     | kumar    | rajendra nagar | siwan     | bihar     | 841226 |  9988776657 | omkar023@gmail.com   |
 | sarita    | kumari   | saketpuram     | delhi     | delhi     | 234632 |  9988776658 | sarita09@gmail.com   |
