@@ -94,3 +94,18 @@ mysql> select * from addressbook;
 | sewika    | kumari   | ramnagar       | ranchi    | jharkhand | 841288 |  9988776650 | sewika98@gmail.com   |
 +-----------+----------+----------------+-----------+-----------+--------+-------------+----------------------+
 5 rows in set (0.06 sec)
+
+UC5: ability to delete person using person name
+mysql> delete from addressbook
+    -> where firstName='raj';
+Query OK, 1 row affected (0.14 sec)
+
+mysql> select * from addressbook;
++-----------+----------+----------------+-----------+-----------+--------+-------------+----------------------+
+| firstName | lastName | address        | city      | state     | zip    | phoneNumber | email                |
++-----------+----------+----------------+-----------+-----------+--------+-------------+----------------------+
+| ujjawal   | kumar    | isawarpur      | gorakhpur | up        | 273016 |  9988776655 | ujjawal123@gmail.com |
+| omkar     | kumar    | rajendra nagar | siwan     | bihar     | 841226 |  9988776657 | omkar023@gmail.com   |
+| sarita    | kumari   | saketpuram     | delhi     | delhi     | 234632 |  9988776658 | sarita09@gmail.com   |
+| sewika    | kumari   | ramnagar       | ranchi    | jharkhand | 841288 |  9988776650 | sewika98@gmail.com   |
++-----------+----------+----------------+-----------+-----------+--------+-------------+----------------------+
