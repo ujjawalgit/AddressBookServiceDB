@@ -25,6 +25,7 @@ mysql> SHOW DATABASES;
 mysql> USE AddressBookService;
 Database changed
 
+UC2: creating table
 mysql> create table AddressBook
  -> (
  ->firstName varchar(30) not null,
