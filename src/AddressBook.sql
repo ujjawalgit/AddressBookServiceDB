@@ -139,3 +139,16 @@ mysql> select count(city), count(state)
 |           4 |            4 |
 +-------------+--------------+
 1 row in set (0.00 sec)
+
+UC8: Retrieve entries sorted alphabetically
+mysql> select * from addressbook
+    -> order by firstName;
++-----------+----------+----------------+-----------+-----------+--------+-------------+----------------------+
+| firstName | lastName | address        | city      | state     | zip    | phoneNumber | email                |
++-----------+----------+----------------+-----------+-----------+--------+-------------+----------------------+
+| omkar     | kumar    | rajendra nagar | siwan     | bihar     | 841226 |  9988776657 | omkar023@gmail.com   |
+| sarita    | kumari   | saketpuram     | delhi     | delhi     | 234632 |  9988776658 | sarita09@gmail.com   |
+| sewika    | kumari   | ramnagar       | ranchi    | jharkhand | 841288 |  9988776650 | sewika98@gmail.com   |
+| ujjawal   | kumar    | isawarpur      | gorakhpur | up        | 273016 |  9988776655 | ujjawal123@gmail.com |
++-----------+----------+----------------+-----------+-----------+--------+-------------+----------------------+
+4 rows in set (0.02 sec)
