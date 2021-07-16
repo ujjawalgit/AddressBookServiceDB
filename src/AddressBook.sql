@@ -109,3 +109,23 @@ mysql> select * from addressbook;
 | sarita    | kumari   | saketpuram     | delhi     | delhi     | 234632 |  9988776658 | sarita09@gmail.com   |
 | sewika    | kumari   | ramnagar       | ranchi    | jharkhand | 841288 |  9988776650 | sewika98@gmail.com   |
 +-----------+----------+----------------+-----------+-----------+--------+-------------+----------------------+
+
+UC6: retrive person belongs to city or state
+mysql> select * from addressbook
+    -> where city='delhi';
++-----------+----------+------------+-------+-------+--------+-------------+--------------------+
+| firstName | lastName | address    | city  | state | zip    | phoneNumber | email              |
++-----------+----------+------------+-------+-------+--------+-------------+--------------------+
+| sarita    | kumari   | saketpuram | delhi | delhi | 234632 |  9988776658 | sarita09@gmail.com |
++-----------+----------+------------+-------+-------+--------+-------------+--------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from addressbook
+    -> where city='delhi' or state='up';
++-----------+----------+------------+-----------+-------+--------+-------------+----------------------+
+| firstName | lastName | address    | city      | state | zip    | phoneNumber | email                |
++-----------+----------+------------+-----------+-------+--------+-------------+----------------------+
+| ujjawal   | kumar    | isawarpur  | gorakhpur | up    | 273016 |  9988776655 | ujjawal123@gmail.com |
+| sarita    | kumari   | saketpuram | delhi     | delhi | 234632 |  9988776658 | sarita09@gmail.com   |
++-----------+----------+------------+-----------+-------+--------+-------------+----------------------+
+2 rows in set (0.00 sec)
